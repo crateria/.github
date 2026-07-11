@@ -1,20 +1,22 @@
 # Crateria
 
 <p align="center">
-  <img src="icons/crateria.png" width="96" height="96" alt="Crateria">
+  <img src="icons/crateria.png" width="128" height="128" alt="Crateria">
 </p>
 
-Linux desktop software in **Rust** — Wayland-native tools, signed package
-repos, and focused utilities.
+<p align="center">
+  Linux desktop software in <strong>Rust</strong> — Wayland-native tools,
+  signed package repos, and focused utilities.
+</p>
 
 ## Products
 
 | | Project | What it is |
 |---|---------|------------|
-| <img src="icons/trance.png" width="40" height="40" alt=""> | **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
-| <img src="icons/trance-plugins.png" width="40" height="40" alt=""> | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
-| <img src="icons/morphball.png" width="40" height="40" alt=""> | **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
-| | **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
+| <img src="icons/trance.png" width="48" height="48" alt=""> | **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
+| <img src="icons/trance-plugins.png" width="48" height="48" alt=""> | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
+| <img src="icons/morphball.png" width="48" height="48" alt=""> | **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
+| <img src="icons/crateria.png" width="48" height="48" alt=""> | **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
 
 ## Install (any product)
 
@@ -42,6 +44,10 @@ sudo dnf install trance   # or: morphball
 
 Package index: **https://crateria.github.io/packages/**
 
+## Brand
+
+Full icon kit (masters, size ladder, heroes): **[crateria/brand](https://github.com/crateria/brand)**
+
 ## Contributing
 
 Issues and PRs are welcome on individual repositories. Prefer small, focused
@@ -51,9 +57,4 @@ changes with tests where applicable. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 * Report vulnerabilities via each repo’s **Security** tab (private reporting)
   or see [SECURITY.md](../SECURITY.md).
-* Package signing process for maintainers:
-  [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)
-
-## Brand
-
-Full icon kit (masters + size ladder): **[crateria/brand](https://github.com/crateria/brand)**
+* Package signing: [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)

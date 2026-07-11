@@ -23,15 +23,10 @@ vulnerability reporting when the issue is security-sensitive.
 - [x] Branch protection on product `main`: block force-push and branch deletion
 - [x] Web commit signoff required (org setting)
 
-### Owner action still required
+### Applied (owner completed)
 
-- [ ] **Require 2FA** for organization members  
-  GitHub API did not flip this flag (common until every member/outside
-  collaborator has 2FA enrolled and the org Authentication security page is
-  confirmed).  
-  **UI:** https://github.com/organizations/crateria/settings/security  
-  → *Require two-factor authentication*
-- [ ] Confirm GitHub account 2FA for `@UberMetroid` (and any future members)
+- [x] **Require 2FA** for organization members (`two_factor_requirement_enabled: true`)
+- [x] Personal account uses secure 2FA methods (SMS removed; TOTP/passkey)
 - [ ] Optional: required status checks on `main` once CI is stable
 - [ ] Optional: signing key offline backup + rotation drill (`packages/docs/SIGNING.md`)
 

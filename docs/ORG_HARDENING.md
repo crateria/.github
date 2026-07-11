@@ -12,7 +12,7 @@
 
 ## Still manual
 
-* Toggle **Require 2FA** in org Authentication security settings if API remains no-op
+* ~~Toggle **Require 2FA**~~ **Done** (2026-07-11): org requires 2FA
 * Optional: required CI status checks after workflows are green
 * Optional: Dependabot PR backlog cleanup on trance (duplicate major bumps)
 

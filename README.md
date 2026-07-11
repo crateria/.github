@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/crateria">
+    <img src="crateria-header.jpg" alt="Crateria" width="100%">
+  </a>
+</p>
+
 # crateria/.github
 
 Organization profile and community health files for
@@ -10,24 +16,25 @@ repositories (`trance`, `morphball`, and so on).
 
 | Path | Purpose |
 |------|---------|
-| [`profile/README.md`](profile/README.md) | Organization homepage content (shown at [github.com/crateria](https://github.com/crateria)) |
-| [`profile/icons/`](profile/icons/) | Icons referenced by the profile README |
-| [`brand/`](brand/) | Profile copies of avatar/hero art (canonical kit is [crateria/brand](https://github.com/crateria/brand)) |
+| [`profile/README.md`](profile/README.md) | Content shown on the **organization homepage** ([github.com/crateria](https://github.com/crateria)) |
+| [`profile/icons/`](profile/icons/) | Icons used by the org profile README |
+| [`crateria-header.jpg`](crateria-header.jpg) | Crateria header banner (same as product READMEs) |
+| [`brand/`](brand/) | Profile copies of avatar/hero art (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute across Crateria projects |
-| [`SECURITY.md`](SECURITY.md) | Organization security policy and reporting |
-| [`docs/`](docs/) | Internal notes (reviews, hardening logs) |
+| [`SECURITY.md`](SECURITY.md) | Organization security policy |
+| [`docs/`](docs/) | Internal maintainer notes |
 
 ## Related repositories
 
 | Repository | Role |
 |------------|------|
 | [crateria/crateria](https://github.com/crateria/crateria) | Org map / landing page |
-| [crateria/brand](https://github.com/crateria/brand) | Brand kit (icons, masters) |
+| [crateria/brand](https://github.com/crateria/brand) | Brand kit (icons, header source of truth) |
 | [crateria/packages](https://github.com/crateria/packages) | APT and DNF package repositories |
 | [crateria/trance](https://github.com/crateria/trance) | Wayland screensaver |
 | [crateria/morphball](https://github.com/crateria/morphball) | Archive manager |
 
 ## License
 
-Community health files are provided for the Crateria organization.
+Community health files for the Crateria organization.
 Product code is licensed under Apache-2.0 in each product repository.

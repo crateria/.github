@@ -1,14 +1,16 @@
-# Brand assets (profile copies)
+# Brand copies (profile only)
 
-**Canonical full kit:** https://github.com/crateria/brand
+Canonical brand kit: **[crateria/brand](https://github.com/crateria/brand)**
+
+Files here are copies used by the organization profile README and documentation.
 
 | File | Use |
 |------|-----|
-| `org-avatar.png` | Upload as GitHub org avatar (Settings → Profile picture) |
-| `crateria-hero.jpg` | Marketing / scenic hero |
-| `../profile/icons/*.png` | Org profile README product marks |
+| `org-avatar.png` | Candidate for the GitHub organization avatar |
+| `crateria-hero.jpg` | Marketing / scenic still |
+| `../profile/icons/` | Icons embedded in the org profile README |
 
-After reinstalling a machine:
+To work with masters and size ladders after a machine reinstall:
 
 ```bash
 git clone https://github.com/crateria/brand.git

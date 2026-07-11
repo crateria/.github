@@ -1,50 +1,47 @@
-# Crateria organization security
+# Security policy
 
-Report product-specific issues on that product’s repository. Use private
-vulnerability reporting when the issue is security-sensitive.
+Crateria takes security reports seriously. Report vulnerabilities **privately**
+when possible so we can fix them before public disclosure.
 
-| Repository | Private reporting |
-|------------|-------------------|
-| [trance](https://github.com/crateria/trance/security/advisories/new) | Yes |
-| [trance-plugins](https://github.com/crateria/trance-plugins/security/advisories/new) | Yes |
-| [morphball](https://github.com/crateria/morphball/security/advisories/new) | Yes |
-| [packages](https://github.com/crateria/packages/security/advisories/new) | Yes (signing / pool) |
+## Where to report
 
-## Org checklist
+Use **private vulnerability reporting** on the repository that owns the code:
 
-### Automated / API-applied
+| Repository | Scope |
+|------------|--------|
+| [trance](https://github.com/crateria/trance/security/advisories/new) | Screensaver daemon, CLI, TUI, applet, D-Bus, plugin loading |
+| [trance-plugins](https://github.com/crateria/trance-plugins/security/advisories/new) | Official effect plugins |
+| [morphball](https://github.com/crateria/morphball/security/advisories/new) | Archive pack/unpack, path safety, SFX |
+| [packages](https://github.com/crateria/packages/security/advisories/new) | Package indexes, signing, published artifacts |
 
-- [x] Secret scanning on all public repos
-- [x] Secret scanning push protection on all public repos
-- [x] Dependabot security updates enabled on all public repos
-- [x] Dependabot alerts / dependency graph defaults for **new** repos
-- [x] Secret scanning defaults for **new** repos
-- [x] Private vulnerability reporting enabled on product repos
-- [x] Branch protection on product `main`: block force-push and branch deletion
-- [x] Web commit signoff required (org setting)
+If you are unsure which repository applies, open a private report on
+[trance](https://github.com/crateria/trance/security/advisories/new) or email
+the maintainer through GitHub.
 
-### Applied (owner completed)
-
-- [x] **Require 2FA** for organization members (`two_factor_requirement_enabled: true`)
-- [x] Personal account uses secure 2FA methods (SMS removed; TOTP/passkey)
-- [ ] Optional: required status checks on `main` once CI is stable
-- [ ] Optional: signing key offline backup + rotation drill (`packages/docs/SIGNING.md`)
-
-## Package supply chain
-
-* Consumers install from **https://crateria.github.io/packages/**
-* Signing procedure: [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)
-* Signing scripts must not hardcode personal home paths or emails; use
-  `CRATERIA_GPG_NAME` (and optional `CRATERIA_GPG_PATH`)
-
-## Brand / compatibility notes
-
-* Public brand is **Crateria** (`github.com/crateria`).
-* Trance D-Bus well-known name remains `io.github.ubermetroid.trance` for
-  upgrade compatibility until an explicit migration ships.
-* Prefer `crateria` in new public IDs (docs, package names, homepages).
+Do **not** open a public issue for active exploits, key compromise, or
+malicious packages in the distribution pool.
 
 ## Response targets
 
-* Acknowledge security reports within **72 hours**
-* Critical issues: aim for fix or mitigation within **30 days**
+| Severity | Target |
+|----------|--------|
+| Acknowledgement | Within 72 hours |
+| Critical fix or mitigation | Within 30 days when feasible |
+
+We may ask for more detail or a minimal reproduction. Coordinated disclosure is
+preferred until a fix or mitigation is available.
+
+## Package distribution
+
+Users install packages from [crateria.github.io/packages](https://crateria.github.io/packages/).
+Packages are GPG-signed. Maintainer signing procedure:
+[packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md).
+
+Never commit private keys, passphrases, or machine-local signing paths to any
+Crateria repository.
+
+## Compatibility note
+
+Public branding uses **Crateria** (`github.com/crateria`). Some installed
+interfaces (for example the trance D-Bus name `io.github.ubermetroid.trance`)
+retain older identifiers for upgrade compatibility until a deliberate migration.

@@ -1,28 +1,31 @@
 # Crateria
 
 <p align="center">
-  <img src="icons/crateria.png" width="128" height="128" alt="Crateria">
+  <img src="icons/crateria.png" width="96" height="96" alt="Crateria">
 </p>
 
 <p align="center">
-  Linux desktop software in <strong>Rust</strong> — Wayland-native tools,
-  signed package repos, and focused utilities.
+  Linux desktop software written in Rust.<br>
+  Wayland tools, signed package repositories, and small focused utilities.
 </p>
 
-## Products
+## Projects
 
-| | Project | What it is |
-|---|---------|------------|
-| <img src="icons/trance.png" width="48" height="48" alt=""> | **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
-| <img src="icons/trance-plugins.png" width="48" height="48" alt=""> | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
-| <img src="icons/morphball.png" width="48" height="48" alt=""> | **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
-| <img src="icons/crateria.png" width="48" height="48" alt=""> | **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
+| | Project | Description |
+|---|---------|-------------|
+| <img src="icons/trance.png" width="40" height="40" alt=""> | **[trance](https://github.com/crateria/trance)** | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
+| <img src="icons/trance-plugins.png" width="40" height="40" alt=""> | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects |
+| <img src="icons/morphball.png" width="40" height="40" alt=""> | **[morphball](https://github.com/crateria/morphball)** | Archive manager (CLI + TUI) with path-traversal checks |
+| <img src="icons/crateria.png" width="40" height="40" alt=""> | **[packages](https://github.com/crateria/packages)** | APT and DNF repositories |
 
-## Install (any product)
+Organization map: [crateria/crateria](https://github.com/crateria/crateria) · Brand assets: [crateria/brand](https://github.com/crateria/brand)
 
-Add the Crateria package repository once, then install with `apt` or `dnf`.
+## Install
 
-### Debian / Ubuntu / Pop!_OS
+Add the package repository once, then install with your distro tools.
+
+<details>
+<summary><strong>Debian / Ubuntu / Pop!_OS</strong></summary>
 
 ```bash
 sudo mkdir -p /etc/apt/keyrings
@@ -34,7 +37,10 @@ sudo apt update
 sudo apt install trance   # or: morphball
 ```
 
-### Fedora
+</details>
+
+<details>
+<summary><strong>Fedora</strong></summary>
 
 ```bash
 sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo \
@@ -42,23 +48,12 @@ sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo \
 sudo dnf install trance   # or: morphball
 ```
 
-Package index: **https://crateria.github.io/packages/**
+</details>
 
-## Umbrella
+Package index: [crateria.github.io/packages](https://crateria.github.io/packages/)
 
-Org landing page: **[crateria/crateria](https://github.com/crateria/crateria)**
+## Contributing and security
 
-## Brand
-
-Full icon kit (masters, size ladder, heroes): **[crateria/brand](https://github.com/crateria/brand)**
-
-## Contributing
-
-Issues and PRs are welcome on individual repositories. Prefer small, focused
-changes with tests where applicable. See [CONTRIBUTING.md](../CONTRIBUTING.md).
-
-## Security
-
-* Report vulnerabilities via each repo’s **Security** tab (private reporting)
-  or see [SECURITY.md](../SECURITY.md).
-* Package signing: [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)
+- Contributing: [CONTRIBUTING.md](../CONTRIBUTING.md)
+- Security policy: [SECURITY.md](../SECURITY.md)
+- Prefer private vulnerability reporting on the affected product repository

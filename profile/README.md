@@ -1,6 +1,6 @@
 # Crateria
 
-Linux desktop software in **Rust** — Wayland-native tools, signed package repos, and focused utilities.
+Linux desktop software in **Rust**
 
 ## Products
 

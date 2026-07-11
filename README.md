@@ -17,19 +17,20 @@ repositories (`trance`, `morphball`, and so on).
 | Path | Purpose |
 |------|---------|
 | [`profile/README.md`](profile/README.md) | Content shown on the **organization homepage** ([github.com/crateria](https://github.com/crateria)) |
-| [`profile/icons/`](profile/icons/) | Icons used by the org profile README |
 | [`crateria-header.jpg`](crateria-header.jpg) | Crateria header banner (same as product READMEs) |
-| [`brand/`](brand/) | Profile copies of avatar/hero art (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
+| [`brand/`](brand/) | Optional profile copies (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute across Crateria projects |
 | [`SECURITY.md`](SECURITY.md) | Organization security policy |
 | [`docs/`](docs/) | Internal maintainer notes |
+
+Public branding is **header-only** for now. Product icons are deferred.
 
 ## Related repositories
 
 | Repository | Role |
 |------------|------|
 | [crateria/crateria](https://github.com/crateria/crateria) | Org map / landing page |
-| [crateria/brand](https://github.com/crateria/brand) | Brand kit (icons, header source of truth) |
+| [crateria/brand](https://github.com/crateria/brand) | Brand kit (header source of truth) |
 | [crateria/packages](https://github.com/crateria/packages) | APT and DNF package repositories |
 | [crateria/trance](https://github.com/crateria/trance) | Wayland screensaver |
 | [crateria/morphball](https://github.com/crateria/morphball) | Archive manager |

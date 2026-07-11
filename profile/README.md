@@ -1,6 +1,7 @@
 # Crateria
 
-Linux desktop software in **Rust**
+Linux desktop software in **Rust** — Wayland-native tools, signed package
+repos, and focused utilities.
 
 ## Products
 
@@ -8,7 +9,7 @@ Linux desktop software in **Rust**
 |---------|------------|
 | **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
 | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
-| **[morphball](https://github.com/crateria/morphball)** | Secure multi-threaded archive manager (CLI) |
+| **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
 | **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
 
 ## Install (any product)
@@ -39,8 +40,12 @@ Package index: **https://crateria.github.io/packages/**
 
 ## Contributing
 
-Issues and PRs are welcome on individual repositories. Prefer small, focused changes with tests where applicable.
+Issues and PRs are welcome on individual repositories. Prefer small, focused
+changes with tests where applicable. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Security
 
-See each repo’s `SECURITY.md`. Please use private reporting for vulnerabilities when available.
+* Report vulnerabilities via each repo’s **Security** tab (private reporting)
+  or see [SECURITY.md](../SECURITY.md).
+* Package signing process for maintainers:
+  [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)

@@ -1,16 +1,20 @@
 # Crateria
 
+<p align="center">
+  <img src="icons/crateria.png" width="96" height="96" alt="Crateria">
+</p>
+
 Linux desktop software in **Rust** — Wayland-native tools, signed package
 repos, and focused utilities.
 
 ## Products
 
-| Project | What it is |
-|---------|------------|
-| **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
-| **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
-| **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
-| **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
+| | Project | What it is |
+|---|---------|------------|
+| <img src="icons/trance.png" width="40" height="40" alt=""> | **[trance](https://github.com/crateria/trance)** | Modular Wayland screensaver daemon with CLI, TUI, and optional COSMIC applet |
+| <img src="icons/trance-plugins.png" width="40" height="40" alt=""> | **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects (beams, storm, radar, hearth, …) |
+| <img src="icons/morphball.png" width="40" height="40" alt=""> | **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) with zip-slip path checks |
+| | **[packages](https://github.com/crateria/packages)** | APT + DNF repositories hosted on GitHub Pages |
 
 ## Install (any product)
 

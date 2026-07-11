@@ -53,3 +53,7 @@ changes with tests where applicable. See [CONTRIBUTING.md](../CONTRIBUTING.md).
   or see [SECURITY.md](../SECURITY.md).
 * Package signing process for maintainers:
   [packages/docs/SIGNING.md](https://github.com/crateria/packages/blob/main/docs/SIGNING.md)
+
+## Brand
+
+Full icon kit (masters + size ladder): **[crateria/brand](https://github.com/crateria/brand)**

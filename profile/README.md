@@ -9,12 +9,12 @@ repositories, and small focused utilities.
 
 ## Projects
 
-| Project | Description |
-|---------|-------------|
-| **[trance](https://github.com/crateria/trance)** | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
-| **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects |
-| **[morphball](https://github.com/crateria/morphball)** | Archive manager (CLI + TUI) |
-| **[packages](https://github.com/crateria/packages)** | APT and DNF repositories |
+| Project | Status | Description |
+|---------|--------|-------------|
+| **[trance](https://github.com/crateria/trance)** | [![CI](https://github.com/crateria/trance/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance/actions/workflows/ci.yml) | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
+| **[trance-plugins](https://github.com/crateria/trance-plugins)** | [![CI](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml) | Official screensaver effects |
+| **[morphball](https://github.com/crateria/morphball)** | [![CI](https://github.com/crateria/morphball/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/morphball/actions/workflows/ci.yml) | Archive manager (CLI + TUI) |
+| **[packages](https://github.com/crateria/packages)** | [![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml) | APT and DNF repositories |
 
 Organization map: [crateria/crateria](https://github.com/crateria/crateria) · Brand: [crateria/brand](https://github.com/crateria/brand)
 

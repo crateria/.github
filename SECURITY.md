@@ -2,8 +2,11 @@
 
 ## Supported projects
 
-Security fixes are considered for the latest release of each actively maintained
-Crateria product (`trance`, `trance-plugins`, `morphball`, and packaging tooling).
+Security fixes are considered for the latest release of:
+
+- `trance`
+- `trance-plugins`
+- packaging tooling (`packages`)
 
 ## Reporting a vulnerability
 
@@ -13,23 +16,11 @@ Use **GitHub private vulnerability reporting** on the affected repository:
 
 - [trance](https://github.com/crateria/trance/security/advisories/new)
 - [trance-plugins](https://github.com/crateria/trance-plugins/security/advisories/new)
-- [morphball](https://github.com/crateria/morphball/security/advisories/new)
 - [packages](https://github.com/crateria/packages/security/advisories/new)
-- [rusting](https://github.com/crateria/rusting/security/advisories/new)
 
-Include:
-
-- Affected repository and version / commit
-- Impact (what an attacker can do)
-- Reproduction steps or proof-of-concept
-- Any known mitigations
+Include affected version/commit, impact, reproduction steps, and any mitigations.
 
 ## Response
 
 We aim to acknowledge reports within a reasonable time and to coordinate a fix
 and disclosure schedule for confirmed issues.
-
-## Prefer safe defaults
-
-Crateria projects prioritize path safety, least privilege, and clear failure
-modes. If you find a design that makes safe use hard, that is also worth reporting.

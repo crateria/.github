@@ -8,10 +8,9 @@ Thanks for helping with Crateria — Linux desktop software written in Rust.
 |------------|------|
 | [trance](https://github.com/crateria/trance) | Wayland screensaver daemon |
 | [trance-plugins](https://github.com/crateria/trance-plugins) | Official Trance effects |
-| [morphball](https://github.com/crateria/morphball) | Secure archive manager (CLI + TUI) |
 | [packages](https://github.com/crateria/packages) | APT and DNF package repositories |
-| [rusting](https://github.com/crateria/rusting) | Experimental Syncthing-compatible client |
 | [brand](https://github.com/crateria/brand) | Brand kit |
+| [crateria.github.io](https://github.com/crateria/crateria.github.io) | Documentation site |
 
 ## How to contribute
 
@@ -19,7 +18,7 @@ Thanks for helping with Crateria — Linux desktop software written in Rust.
 2. Fork the product repository and create a focused branch.
 3. Keep changes small; prefer readable Rust over cleverness.
 4. Run the project’s usual checks (`cargo fmt`, `cargo clippy`, `cargo test`).
-5. Open a pull request against the default branch with a clear summary.
+5. Open a pull request against **`master`** with a clear summary.
 
 ## Code style
 

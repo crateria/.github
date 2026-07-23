@@ -19,10 +19,9 @@ Default branch: **`master`**.
 | [`AGENTS.md`](AGENTS.md) | Maintainer / coding-agent checklist |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute |
 | [`SECURITY.md`](SECURITY.md) | Security policy |
-| [`rust-policies/`](rust-policies/) | Shared `deny` / `clippy` / `rustfmt` baselines |
+| [`docs/TRANCE_RENAME_TRANSFER.md`](docs/TRANCE_RENAME_TRANSFER.md) | Rename / new-org cutover runbook |
+| [`rust-policies/`](rust-policies/) | Shared deny / clippy / rustfmt baselines |
 | [`sync-policies.sh`](sync-policies.sh) | Copy policies into sibling product checkouts |
-| [`brand/`](brand/) | Optional profile copies |
-| [`docs/`](docs/) | Internal notes |
 
 ## Products
 
@@ -30,9 +29,7 @@ Default branch: **`master`**.
 |------------|------|
 | [trance](https://github.com/crateria/trance) | Wayland screensaver |
 | [trance-plugins](https://github.com/crateria/trance-plugins) | Official effects |
-| [morphball](https://github.com/crateria/morphball) | Archive manager |
 | [packages](https://github.com/crateria/packages) | APT / DNF index |
-| [rusting](https://github.com/crateria/rusting) | Experimental file sync (WIP) |
 | [brand](https://github.com/crateria/brand) | Brand kit |
 | [crateria.github.io](https://github.com/crateria/crateria.github.io) | Docs site |
 

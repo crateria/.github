@@ -16,9 +16,7 @@ Self-hosted **web** apps and Unraid templates live under
 |---------|:--:|-------------|
 | **[trance](https://github.com/crateria/trance)** | [![CI](https://github.com/crateria/trance/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance/actions/workflows/ci.yml) | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
 | **[trance-plugins](https://github.com/crateria/trance-plugins)** | [![CI](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml) | Official screensaver effects |
-| **[morphball](https://github.com/crateria/morphball)** | [![CI](https://github.com/crateria/morphball/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/morphball/actions/workflows/ci.yml) | Secure archive manager (CLI + TUI) |
 | **[packages](https://github.com/crateria/packages)** | [![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml) | APT and DNF package repositories |
-| **[rusting](https://github.com/crateria/rusting)** | — | Experimental Syncthing-compatible client (**WIP**) |
 
 Brand kit: [crateria/brand](https://github.com/crateria/brand) · Site: [crateria.github.io](https://crateria.github.io/) · Maintainer notes: [AGENTS.md](https://github.com/crateria/.github/blob/master/AGENTS.md)
 
@@ -34,7 +32,7 @@ sudo curl -fsSL https://crateria.github.io/packages/apt/crateria-keyring.gpg \
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/crateria.gpg] https://crateria.github.io/packages/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/crateria.list
 sudo apt update
-sudo apt install trance   # or: morphball
+sudo apt install trance
 ```
 
 </details>
@@ -45,7 +43,7 @@ sudo apt install trance   # or: morphball
 ```bash
 sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo \
   -o /etc/yum.repos.d/crateria.repo
-sudo dnf install trance   # or: morphball
+sudo dnf install trance
 ```
 
 </details>
@@ -57,3 +55,4 @@ Package index: [crateria.github.io/packages](https://crateria.github.io/packages
 - [CONTRIBUTING.md](https://github.com/crateria/.github/blob/master/CONTRIBUTING.md)
 - [SECURITY.md](https://github.com/crateria/.github/blob/master/SECURITY.md)
 - [AGENTS.md](https://github.com/crateria/.github/blob/master/AGENTS.md) — checklist for maintainers and coding agents
+- [docs/TRANCE_RENAME_TRANSFER.md](https://github.com/crateria/.github/blob/master/docs/TRANCE_RENAME_TRANSFER.md) — rename / new-org cutover checklist

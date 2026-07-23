@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Sync centralized Rust policy files into sibling product checkouts.
-# Run from a directory that contains crateria repo clones as siblings, or set CRATERIA_ROOT.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -10,15 +9,12 @@ ROOT="${CRATERIA_ROOT:-$(cd "${SCRIPT_DIR}/.." && pwd)}"
 REPOS=(
   trance
   trance-plugins
-  morphball
   packages
-  rusting
 )
 
 for name in "${REPOS[@]}"; do
   abs_repo="${ROOT}/${name}"
-  if [[ ! -d "$abs_repo/.git" && ! -d "$abs_repo" ]]; then
-    # try SCRIPT_DIR relative layouts
+  if [[ ! -d "$abs_repo" ]]; then
     for cand in "${SCRIPT_DIR}/../${name}" "${HOME}/src/crateria/${name}"; do
       if [[ -d "$cand" ]]; then abs_repo="$cand"; break; fi
     done

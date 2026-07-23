@@ -1,19 +1,11 @@
-<p align="center">
-  <img src="crateria-header.jpg" alt="Crateria" width="100%">
-</p>
+# Crateria (legacy)
 
-# Crateria
+Desktop screensaver work moved to **[IdleScreen](https://github.com/idlescreen)**.
 
-Crateria previously hosted Linux desktop experiments in Rust.
+| IdleScreen | URL |
+|------------|-----|
+| Org | https://github.com/idlescreen |
+| Core | https://github.com/idlescreen/idlescreen |
+| Packages | https://idlescreen.github.io/packages/ |
 
-**IdleScreen** (Wayland screensaver / ambient display, formerly Trance) now lives at:
-
-**https://github.com/idlescreen**
-
-| Product | Location |
-|---------|----------|
-| Daemon | [idlescreen/trance](https://github.com/idlescreen/trance) |
-| Plugins | [idlescreen/trance-plugins](https://github.com/idlescreen/trance-plugins) |
-| Packages | [idlescreen/packages](https://github.com/idlescreen/packages) · [idlescreen.github.io/packages](https://idlescreen.github.io/packages/) |
-
-Self-hosted **web** apps remain under [studio2201](https://github.com/studio2201).
+This organization is retained only for historical redirects and archive pages.

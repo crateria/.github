@@ -16,24 +16,25 @@ repositories (`trance`, `morphball`, and so on).
 
 | Path | Purpose |
 |------|---------|
-| [`profile/README.md`](profile/README.md) | Content shown on the **organization homepage** ([github.com/crateria](https://github.com/crateria)) |
-| [`crateria-header.jpg`](crateria-header.jpg) | Crateria header banner (same as product READMEs) |
-| [`brand/`](brand/) | Optional profile copies (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
+| [`profile/README.md`](profile/README.md) | Content shown on the **organization homepage** |
+| [`crateria-header.jpg`](crateria-header.jpg) | Header banner |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute across Crateria projects |
 | [`SECURITY.md`](SECURITY.md) | Organization security policy |
+| [`brand/`](brand/) | Optional profile copies (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
 | [`docs/`](docs/) | Internal maintainer notes |
+| [`rust-policies/`](rust-policies/) | Shared clippy / deny / rustfmt baselines |
 
-Public branding is **header-only** for now. Product icons are deferred.
-
-## Related repositories
+## Product repositories
 
 | Repository | Role |
 |------------|------|
-| [crateria/crateria](https://github.com/crateria/crateria) | Org map / landing page |
-| [crateria/brand](https://github.com/crateria/brand) | Brand kit (header source of truth) |
-| [crateria/packages](https://github.com/crateria/packages) | APT and DNF package repositories |
 | [crateria/trance](https://github.com/crateria/trance) | Wayland screensaver |
+| [crateria/trance-plugins](https://github.com/crateria/trance-plugins) | Official effects |
 | [crateria/morphball](https://github.com/crateria/morphball) | Archive manager |
+| [crateria/packages](https://github.com/crateria/packages) | APT and DNF package repositories |
+| [crateria/rusting](https://github.com/crateria/rusting) | Experimental Syncthing-compatible client |
+| [crateria/brand](https://github.com/crateria/brand) | Brand kit |
+| [crateria/crateria.github.io](https://github.com/crateria/crateria.github.io) | Org site |
 
 ## License
 

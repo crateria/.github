@@ -7,16 +7,20 @@
 Linux desktop software written in Rust. Wayland tools, signed package
 repositories, and small focused utilities.
 
+Self-hosted **web** apps and Unraid templates live under
+[studio2201](https://github.com/studio2201).
+
 ## Projects
 
-| Project | Status | Description |
-|---------|--------|-------------|
-| **[trance](https://github.com/crateria/trance)** | [![CI](https://github.com/crateria/trance/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance/actions/workflows/ci.yml) | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
-| **[trance-plugins](https://github.com/crateria/trance-plugins)** | [![CI](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml) | Official screensaver effects |
-| **[morphball](https://github.com/crateria/morphball)** | [![CI](https://github.com/crateria/morphball/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/morphball/actions/workflows/ci.yml) | Archive manager (CLI + TUI) |
-| **[packages](https://github.com/crateria/packages)** | [![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml) | APT and DNF repositories |
+| Project | Description |
+|---------|-------------|
+| **[trance](https://github.com/crateria/trance)** | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
+| **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects |
+| **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) |
+| **[packages](https://github.com/crateria/packages)** | APT and DNF package repositories |
+| **[rusting](https://github.com/crateria/rusting)** | Experimental Syncthing-compatible client (WIP) |
 
-Organization map: [crateria/crateria](https://github.com/crateria/crateria) · Brand: [crateria/brand](https://github.com/crateria/brand)
+Brand kit: [crateria/brand](https://github.com/crateria/brand) · Site: [crateria.github.io](https://crateria.github.io/)
 
 ## Install
 
@@ -48,7 +52,7 @@ sudo dnf install trance   # or: morphball
 
 Package index: [crateria.github.io/packages](https://crateria.github.io/packages/)
 
-## Contributing and security
+## Community
 
-- [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [SECURITY.md](../SECURITY.md)
+- [CONTRIBUTING.md](https://github.com/crateria/.github/blob/main/CONTRIBUTING.md)
+- [SECURITY.md](https://github.com/crateria/.github/blob/main/SECURITY.md)

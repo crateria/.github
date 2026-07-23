@@ -9,10 +9,13 @@ Crateria product (`trance`, `trance-plugins`, `morphball`, and packaging tooling
 
 Please **do not** file a public GitHub issue for security-sensitive reports.
 
-Prefer one of:
+Use **GitHub private vulnerability reporting** on the affected repository:
 
-1. **GitHub Security Advisories** — use “Report a vulnerability” on the affected repository (if enabled).
-2. **Private contact** — open a draft security advisory or contact the org owners via GitHub.
+- [trance](https://github.com/crateria/trance/security/advisories/new)
+- [trance-plugins](https://github.com/crateria/trance-plugins/security/advisories/new)
+- [morphball](https://github.com/crateria/morphball/security/advisories/new)
+- [packages](https://github.com/crateria/packages/security/advisories/new)
+- [rusting](https://github.com/crateria/rusting/security/advisories/new)
 
 Include:
 

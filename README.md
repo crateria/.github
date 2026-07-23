@@ -9,34 +9,33 @@
 Organization profile and community health files for
 [github.com/crateria](https://github.com/crateria).
 
-This repository is **not** a product. Product source lives in the product
-repositories (`trance`, `morphball`, and so on).
+Default branch: **`master`**.
 
 ## What lives here
 
 | Path | Purpose |
 |------|---------|
-| [`profile/README.md`](profile/README.md) | Content shown on the **organization homepage** |
-| [`crateria-header.jpg`](crateria-header.jpg) | Header banner |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute across Crateria projects |
-| [`SECURITY.md`](SECURITY.md) | Organization security policy |
-| [`brand/`](brand/) | Optional profile copies (canonical kit: [crateria/brand](https://github.com/crateria/brand)) |
-| [`docs/`](docs/) | Internal maintainer notes |
-| [`rust-policies/`](rust-policies/) | Shared clippy / deny / rustfmt baselines |
+| [`profile/README.md`](profile/README.md) | Organization homepage content |
+| [`AGENTS.md`](AGENTS.md) | Maintainer / coding-agent checklist |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute |
+| [`SECURITY.md`](SECURITY.md) | Security policy |
+| [`rust-policies/`](rust-policies/) | Shared `deny` / `clippy` / `rustfmt` baselines |
+| [`sync-policies.sh`](sync-policies.sh) | Copy policies into sibling product checkouts |
+| [`brand/`](brand/) | Optional profile copies |
+| [`docs/`](docs/) | Internal notes |
 
-## Product repositories
+## Products
 
 | Repository | Role |
 |------------|------|
-| [crateria/trance](https://github.com/crateria/trance) | Wayland screensaver |
-| [crateria/trance-plugins](https://github.com/crateria/trance-plugins) | Official effects |
-| [crateria/morphball](https://github.com/crateria/morphball) | Archive manager |
-| [crateria/packages](https://github.com/crateria/packages) | APT and DNF package repositories |
-| [crateria/rusting](https://github.com/crateria/rusting) | Experimental Syncthing-compatible client |
-| [crateria/brand](https://github.com/crateria/brand) | Brand kit |
-| [crateria/crateria.github.io](https://github.com/crateria/crateria.github.io) | Org site |
+| [trance](https://github.com/crateria/trance) | Wayland screensaver |
+| [trance-plugins](https://github.com/crateria/trance-plugins) | Official effects |
+| [morphball](https://github.com/crateria/morphball) | Archive manager |
+| [packages](https://github.com/crateria/packages) | APT / DNF index |
+| [rusting](https://github.com/crateria/rusting) | Experimental file sync (WIP) |
+| [brand](https://github.com/crateria/brand) | Brand kit |
+| [crateria.github.io](https://github.com/crateria/crateria.github.io) | Docs site |
 
 ## License
 
-Community health files for the Crateria organization.
-Product code is licensed under Apache-2.0 in each product repository.
+Apache-2.0 for community files. Product code is Apache-2.0 in each product repository.

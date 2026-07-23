@@ -47,3 +47,12 @@ Secrets:
 - Push dual default branches.
 - Force-push over unrelated hygiene commits without need.
 - File public issues for security bugs — use private vulnerability reporting.
+
+## Phase B hardening (2026-07)
+
+Org-wide 10-agent DAG applied to product crates. Reference model: **morphball**
+(full Stages 1–5). **packages** Stages 1–5. **trance-plugins** / **rusting** /
+**trance** received bounded Stage 1–style hardening; large remaining unwrap
+surfaces (trance daemon, rusting daemon/GUI) are deferred.
+
+Tags of note: `morphball` `v0.1.62`, `packages` `v3.2.29`.

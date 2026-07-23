@@ -1,30 +1,35 @@
 #!/usr/bin/env bash
-# Sync centralized Rust policy files to all local workspace checkouts.
+# Sync centralized Rust policy files into sibling product checkouts.
+# Run from a directory that contains crateria repo clones as siblings, or set CRATERIA_ROOT.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 POLICIES_DIR="${SCRIPT_DIR}/rust-policies"
+ROOT="${CRATERIA_ROOT:-$(cd "${SCRIPT_DIR}/.." && pwd)}"
 
 REPOS=(
-  "${SCRIPT_DIR}/../morphball"
-  "${SCRIPT_DIR}/../../ubermetroid/trance"
-  "${SCRIPT_DIR}/../../ubermetroid/trance-plugins"
-  "${SCRIPT_DIR}/../../ubermetroid/packages"
+  trance
+  trance-plugins
+  morphball
+  packages
+  rusting
 )
 
-for repo in "${REPOS[@]}"; do
-  # Resolve to absolute path
-  abs_repo="$(cd "$repo" 2>/dev/null && pwd || true)"
-  if [[ -n "$abs_repo" && -d "$abs_repo" ]]; then
-    echo "Syncing policies to $(basename "$abs_repo") [${abs_repo}]..."
-    cp -f "${POLICIES_DIR}/deny.toml" "${abs_repo}/"
-    if [[ "$(basename "$abs_repo")" != "packages" ]]; then
-      # packages has no clippy.toml or rustfmt.toml currently, but can receive them.
-      cp -f "${POLICIES_DIR}/clippy.toml" "${abs_repo}/"
-      cp -f "${POLICIES_DIR}/rustfmt.toml" "${abs_repo}/"
-    else
-      cp -f "${POLICIES_DIR}/rustfmt.toml" "${abs_repo}/"
-    fi
+for name in "${REPOS[@]}"; do
+  abs_repo="${ROOT}/${name}"
+  if [[ ! -d "$abs_repo/.git" && ! -d "$abs_repo" ]]; then
+    # try SCRIPT_DIR relative layouts
+    for cand in "${SCRIPT_DIR}/../${name}" "${HOME}/src/crateria/${name}"; do
+      if [[ -d "$cand" ]]; then abs_repo="$cand"; break; fi
+    done
   fi
+  if [[ ! -d "$abs_repo" ]]; then
+    echo "skip ${name} (not found under ${ROOT})"
+    continue
+  fi
+  echo "Syncing policies → ${abs_repo}"
+  cp -f "${POLICIES_DIR}/deny.toml" "${abs_repo}/"
+  cp -f "${POLICIES_DIR}/clippy.toml" "${abs_repo}/" 2>/dev/null || true
+  cp -f "${POLICIES_DIR}/rustfmt.toml" "${abs_repo}/"
 done
-echo "All policies synced successfully!"
+echo "Done."

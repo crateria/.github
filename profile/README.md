@@ -12,15 +12,15 @@ Self-hosted **web** apps and Unraid templates live under
 
 ## Projects
 
-| Project | Description |
-|---------|-------------|
-| **[trance](https://github.com/crateria/trance)** | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
-| **[trance-plugins](https://github.com/crateria/trance-plugins)** | Official screensaver effects |
-| **[morphball](https://github.com/crateria/morphball)** | Secure archive manager (CLI + TUI) |
-| **[packages](https://github.com/crateria/packages)** | APT and DNF package repositories |
-| **[rusting](https://github.com/crateria/rusting)** | Experimental Syncthing-compatible client (WIP) |
+| Project | CI | Description |
+|---------|:--:|-------------|
+| **[trance](https://github.com/crateria/trance)** | [![CI](https://github.com/crateria/trance/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance/actions/workflows/ci.yml) | Wayland screensaver daemon (CLI, TUI, optional COSMIC applet) |
+| **[trance-plugins](https://github.com/crateria/trance-plugins)** | [![CI](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/trance-plugins/actions/workflows/ci.yml) | Official screensaver effects |
+| **[morphball](https://github.com/crateria/morphball)** | [![CI](https://github.com/crateria/morphball/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/morphball/actions/workflows/ci.yml) | Secure archive manager (CLI + TUI) |
+| **[packages](https://github.com/crateria/packages)** | [![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml) | APT and DNF package repositories |
+| **[rusting](https://github.com/crateria/rusting)** | — | Experimental Syncthing-compatible client (**WIP**) |
 
-Brand kit: [crateria/brand](https://github.com/crateria/brand) · Site: [crateria.github.io](https://crateria.github.io/)
+Brand kit: [crateria/brand](https://github.com/crateria/brand) · Site: [crateria.github.io](https://crateria.github.io/) · Maintainer notes: [AGENTS.md](https://github.com/crateria/.github/blob/master/AGENTS.md)
 
 ## Install
 
@@ -54,5 +54,6 @@ Package index: [crateria.github.io/packages](https://crateria.github.io/packages
 
 ## Community
 
-- [CONTRIBUTING.md](https://github.com/crateria/.github/blob/main/CONTRIBUTING.md)
-- [SECURITY.md](https://github.com/crateria/.github/blob/main/SECURITY.md)
+- [CONTRIBUTING.md](https://github.com/crateria/.github/blob/master/CONTRIBUTING.md)
+- [SECURITY.md](https://github.com/crateria/.github/blob/master/SECURITY.md)
+- [AGENTS.md](https://github.com/crateria/.github/blob/master/AGENTS.md) — checklist for maintainers and coding agents
